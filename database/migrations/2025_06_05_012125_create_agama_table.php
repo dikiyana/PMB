@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKomentarTable extends Migration
+class CreateAgamaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateKomentarTable extends Migration
      */
     public function up()
     {
-        Schema::create('komentar', function (Blueprint $table) {
+        Schema::create('agama', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('berita_id');
-            $table->foreign('berita_id')->references('id')->on('berita');
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
-            $table->text('isi');
+            $table->string('nama_agama', 50);
             $table->timestamps();
         });
     }
@@ -31,6 +27,6 @@ class CreateKomentarTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('komentar');
+        Schema::dropIfExists('agama');
     }
 }

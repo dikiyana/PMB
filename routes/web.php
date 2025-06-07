@@ -54,4 +54,10 @@ Route::put('/detil/{detil_id}', 'DetilController@update');
 Route::delete('/detil/{detil_id}', 'DetilController@destroy');
 Auth::routes();
 
+//CRUD Agama
+Route::resource('/agama', 'AgamaController');
+
+//CRUD Siswa
+Route::resource('/siswa', 'SiswaController');
+
 // Route::get('/home', 'HomeController@index')->name('home');

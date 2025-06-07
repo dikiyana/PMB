@@ -1,13 +1,15 @@
 ## 🖼️ User Interface (UI) Preview
-![Homepage Screenshot](menit_ui.png)
+![Homepage Screenshot](pmb_ui.png)
 
 ## 📂 Entity Relationship Diagram (ERD)
-![ERD Diagram](menit_erd.png)
+![ERD Diagram](pmb_erd.png)
 
 
-<h2 align="center">📰 Menit News Portal</h2>
+<h2 align="center">📰 PMB Siswa</h2>
 
-This project is a **news portal web application** inspired by Detik.com, built using the Laravel framework. The application features a clean architecture for managing articles, categories, authors, and users, following Laravel's best practices.
+This project is a simple web application for Penerimaan Mahasiswa Baru (PMB) built using the Laravel framework. The application helps manage the registration and admission process of new students in an educational institution.
+
+It includes modules to handle applicant data such as personal identity, religion, gender, contact information, and other relevant admission details. The system follows Laravel's MVC architecture and best practices to ensure clean and maintainable code..
 
 An ERD (Entity Relationship Diagram) is provided in the project to better understand the database schema and relationships among the entities.
 
@@ -34,7 +36,7 @@ Follow the steps below to run this project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/dikiyana/menit.git
+git clone https://github.com/dikiyana/PMB.git
 cd menit
 ```
 

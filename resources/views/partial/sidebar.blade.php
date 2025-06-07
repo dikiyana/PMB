@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
       <img src="{{asset('admin/dist/img/sepatu.png')}}" alt="AdminLTE Logo" class="brand-image img-square elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">Menit</span>
+      <span class="brand-text font-weight-light">PMB</span>
     </a>
 
     <!-- Sidebar -->
@@ -40,14 +40,14 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                
-                <a href="/" class="nav-link">
+                {{-- <a href="/" class="nav-link">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   
                   <p>Dashboard</p>
-                </a>
+                </a> --}}
               </li>
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>Table<i class="right fas fa-angle-left"></i></p>
@@ -60,9 +60,9 @@
               </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
 
-          <li class="nav-item">
+          {{-- <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>Berita<i class="right fas fa-angle-left"></i></p>
@@ -75,9 +75,9 @@
               </a>
               </li>
             </ul>
-          </li>
+          </li> --}}
 
-          @Auth
+          {{-- @Auth
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
@@ -92,13 +92,36 @@
               </li>
             </ul>
           </li>
+          @endauth --}}
+
+          @Auth
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>Siswa<i class="right fas fa-angle-left"></i></p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+              <a href="/siswa" class="nav-link">
+                <i class="far fa-circle nav-icon"></i>
+                <p>Siswa</p>
+              </a>
+              </li>
+              <li class="nav-item">
+                <a href="/agama" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ref Agama</p>
+                </a>
+                </li>
+            </ul>
+          </li>
           @endauth
 
           @Auth
           <li class="nav-item">
               <a href="/profile" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
-                <p>Profile</p>
+                <p>Profile User</p>
               </a>
               </li>
 

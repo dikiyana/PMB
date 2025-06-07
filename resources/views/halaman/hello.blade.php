@@ -5,5 +5,5 @@ Halaman Utama
 @endsection
 
 @section('content')
-<h2>Silakan menuju Form <a href="/form"> link </a></h2>
+<h2>Halo camaba, silakan melakukan registrasi <a href="/siswa/create"> link </a></h2>
 @endsection
