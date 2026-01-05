@@ -18,7 +18,7 @@ An ERD (Entity Relationship Diagram) is provided in the project to better unders
 ## 🔧 Built With
 
 This Laravel-based application includes:
-
+- **PHP** - 8.0.12
 - **Migration** – Manage and version-control the database schema
 - **Model & Eloquent ORM** – Interact with the database using elegant syntax
 - **Controller** – Handle request logic and connect models to views
